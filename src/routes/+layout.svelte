@@ -101,6 +101,11 @@
 
 <style>
 	.tiles:hover div {
-		animation: bounce 1s infinite; /* Aplicar la animación de brinco */
+		animation: bounce 1s ease infinite; /* Aplicar la animación de brinco */
+	}
+	@keyframes bounce {
+		0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+		40% {transform: translateY(-15px);}
+		60% {transform: translateY(-5px);}
 	}
 </style>
